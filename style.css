@@ -2,4 +2,70 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-size: 20px;
+}
+
+body {
+    min-height: 100vh;
+    font-family: monospace, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.container {
+    display: flex;
+    gap: 2rem;
+}
+
+.container > div {
+    cursor: pointer;
+    margin: 1rem 0;
+}
+
+.rock-img,
+.paper-img,
+.scissors-img {
+    border: 2px solid black;
+    height: 250px;
+    width: 200px;
+    background: url(img/rps-icons.jpg);
+}
+
+.rock-img {
+    background-position: 15% 60%;
+}
+
+.paper-img {
+    background-position: 48% 60%;
+}
+
+.scissors-img {
+    background-position: 83% 60%;
+}
+
+.container .text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.game {
+    margin-top: 2rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.game div {
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-around;
 }
