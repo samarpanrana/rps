@@ -42,6 +42,25 @@ h3 {
     background-position: 15% 60%;
 }
 
+.buttons:hover {
+    animation: key-ani 600ms ease-in-out 100ms infinite;
+}
+
+@keyframes key-ani {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(-4deg) scale(1.04);
+    }
+    75% {
+        transform: rotate(4deg) scale(1.04);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
 .paper-img {
     background-position: 48% 60%;
 }
